@@ -1,0 +1,33 @@
+body {
+	text-align: center;
+}
+
+.popupDiv {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.popupDiv .popupText {
+	visibility: hidden;
+	width: 150px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 8px 0px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.popupDiv .show {
+	visibility: visible;
+	animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+	from{opacity: 0;}
+	to{opacity: 1;}
+}

@@ -1,0 +1,51 @@
+#button1 {
+	height: 62px;
+	width: 62px;
+	position: relative;
+	margin: 2px;
+}
+
+#circle1 {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	z-index: 2;
+}
+
+.Button_Clicked #circle1 {
+	animation: rainbow 1s forwards;
+}
+
+#circle2 {
+	width: 45px;
+	height: 45px;
+	border-radius: 25px;
+	background-color: #B9FFFF;
+	position: absolute;
+	z-index: 3;
+	top: 7.55px;
+	left: 7.55px;
+}
+
+/*If something is clicked and it has the given
+id and classes the animation will run*/
+.Button_Clicked #circle2 {
+	animation: expand 1.1s;
+}
+
+@keyframes rainbow {
+	0% {background-color: #FFC3C3;}
+	16.67% {background-color: #FFE7C3;}
+	33.33% {background-color: #FFFEC3;}
+	50% {background-color: #C8FFC3;}
+	66.67% {background-color: #C3E5FF;}
+	83.33% {background-color: #C3D0FF;}
+	90% {background-color: #CFC3FF;}
+	100% {background-color: #F7FFFF;}
+}
+
+@keyframes expand {
+	0% {width: 45px; height: 45px;}
+	50% {width: 52px; height: 52px; top: 4px; left: 4px;}
+	100% {width: 45px; height: 45px;}
+}

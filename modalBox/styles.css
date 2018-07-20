@@ -1,0 +1,33 @@
+/*CAN ADD WAY MORE STYLES AND 
+MOVE AROUND EVERTHING */
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.modal-content {
+	background-color: white;
+	border: 1px solid black;
+	margin: 15% auto;
+	padding: 0;
+	width: 80%;
+}
+
+.close-btn {
+	float: right;
+	color: black;
+	transition: 0.4s;
+}
+
+.close-btn:hover {
+	color: dimgrey;
+	cursor: pointer;
+}
+

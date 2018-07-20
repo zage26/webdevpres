@@ -1,0 +1,19 @@
+#message {
+	position: relative;
+	display: none;
+	margin: 25px;
+}
+
+.valid {
+	color: green;
+}
+
+/*.valid:before {
+	position: relative;
+	left: -10px;
+	content: "Valid";
+}*/
+
+.invalid {
+	color: red;
+}
